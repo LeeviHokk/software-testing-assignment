@@ -16,9 +16,6 @@ jobs:
       with:
         node-version: 10.x
 
-    - name: Test
-      run: npm test
-
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
