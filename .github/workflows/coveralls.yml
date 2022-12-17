@@ -17,6 +17,6 @@ jobs:
         node-version: 10.x
 
     - name: Coveralls
-      uses: coverallsapp/github-action@main
+      uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
