@@ -15,7 +15,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 16.x
-
+      
+    - name: Install
+      run: | 
+        npm install
+        npm run coverage
+      
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
