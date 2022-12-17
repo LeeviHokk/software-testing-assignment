@@ -10,7 +10,15 @@ describe('toNumber', function(){
     });
 
     it('expect to return NaN',function(){
-        assert.equal(toNumber("sett"), NaN);
+        assert.isNaN(toNumber("sett"), NaN);
+    });
+
+    it('should return 1',function(){
+        assert.equal(toNumber(true),1)
+    });
+
+    it('should return 0',function(){
+        assert.equal(toNumber(false),0)
     });
 
 });

@@ -5,7 +5,7 @@ const assert = chai.assert;
 
 describe('defaultTo', function(){
     it('Checks `value` to determine whether a default value should be returned in its place.',function(){
-        assert.equal(defaultTo(NaN, "default"), "default");
+        assert.isNaN(defaultTo(NaN, "default"), "default");
     });
 
     it('should return 4', function () {
@@ -13,7 +13,7 @@ describe('defaultTo', function(){
     });
 
     it('should return default', function () {
-        assert.equal(defaultTo(null, "default"), "default");
+        assert.equal(defaultTo(null, "0"), "0");
     });
 
 });
