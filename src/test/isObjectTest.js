@@ -5,7 +5,7 @@ const assert = chai.assert;
 
 
 describe('isObject', function(){
-    it('should return false',function(){
+    it('should return false (boolean value)',function(){
         assert.equal(isObject(true), false);
     });
 

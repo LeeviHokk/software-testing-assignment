@@ -24,4 +24,8 @@ describe('eq', function(){
         assert.equal(eq("word","word"), true);
     });
 
+    it('expect to return true ("" and "")',function(){
+        assert.equal(eq("",""), true);
+    });
+
 });
