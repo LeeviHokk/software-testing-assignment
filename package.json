@@ -10,7 +10,7 @@
   },
   "nyc": {
     "all": true,
-    "include": "src/test"
+    "include": ["src/test"]
   },
   "repository": {
     "type": "git",

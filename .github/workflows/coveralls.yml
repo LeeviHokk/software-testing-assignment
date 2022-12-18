@@ -16,7 +16,7 @@ jobs:
       with:
         node-version: 16.x
       
-    - name: Install
+    - name: Coverage
       run: | 
         npm install
         npm test
